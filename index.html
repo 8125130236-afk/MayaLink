@@ -47,7 +47,7 @@
       </section>
 
       <nav class="navigation shadow-sm px-3">
-        <a href="#" class="text-dark text-decoration-none fw-bold"
+        <a href="#offcanvasTarifario" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTarifario" class="text-dark text-decoration-none fw-bold"
           ><i class="bi bi-cash-stack ms-4 me-1 text-success"></i> Tarifario</a
         >
         <a href="#" class="text-dark text-decoration-none fw-bold">
@@ -223,7 +223,71 @@
       </footer>
     </div>
 
-    <!-- COMPONENTE OVERLAY -->
+    <!-- COMPONENTE OVERLAY / OFFCANVAS (IZQUIERDA Y CON COLORES DIFERENTES) -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasTarifario"
+      aria-labelledby="offcanvasTarifarioLabel"
+    >
+      <div class="offcanvas-header bg-dark text-white">
+        <div>
+          <h5 class="offcanvas-title fw-bold" id="offcanvasTarifarioLabel">
+            Tarifario Oficial Chetumal
+          </h5>
+          <small class="text-white-50">Tarifas reguladas y vigentes para el tramo 7</small>
+        </div>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <h6 class="fw-bold text-secondary mb-3">
+          Zonas Urbanas <small class="text-muted d-block fw-normal">(Desde la estación del tren maya)</small>
+        </h6>
+
+        <ul class="list-group list-group-flush mb-4">
+          <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2">
+            <div>
+              <strong class="d-block text-dark">Zona 1</strong>
+              <small class="text-muted">Aeropuerto / Av. Insurgentes</small>
+            </div>
+            <span class="badge bg-primary rounded-pill">$40.00 MXN</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2">
+            <div>
+              <strong class="d-block text-dark">Zona 2</strong>
+              <small class="text-muted">Centro Histórico / Explanada</small>
+            </div>
+            <span class="badge bg-success rounded-pill">$55.00 MXN</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2">
+            <div>
+              <strong class="d-block text-dark">Zona 3</strong>
+              <small class="text-muted">Calderitas / Balnearios</small>
+            </div>
+            <span class="badge bg-info text-dark rounded-pill">$90.00 MXN</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center px-0 py-2">
+            <div>
+              <strong class="d-block text-dark">Zona Foránea</strong>
+              <small class="text-muted">Laguna Milagros (Huay-Pix)</small>
+            </div>
+            <span class="badge bg-warning text-dark rounded-pill">$110.00 MXN</span>
+          </li>
+        </ul>
+
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">
+            Entendido
+          </button>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

@@ -140,3 +140,9 @@ body {
 .height-8 {
   height: 8px;
 }
+
+/* Alineación para modal (Equipo Chunhuhub) */
+.modal-content {
+  text-align: left;
+  font-weight: normal;
+}

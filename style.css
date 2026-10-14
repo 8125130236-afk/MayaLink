@@ -196,4 +196,8 @@ body {
 
 .btn-guardar:hover {
   background-color: #004e99;
+/* Alineación para modal (Equipo Chunhuhub) */
+.modal-content {
+  text-align: left;
+  font-weight: normal;
 }

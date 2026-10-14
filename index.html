@@ -135,6 +135,36 @@ HTML
               <i class="bi bi-search"></i> Consultar Tarifas oficiales
             </button>
           </div>
+          <div class="card-form">
+            <h2>Registro de Vehículo</h2>
+
+            <div class="form-group">
+              <label for="numero-placa">Número de Placa</label>
+              <input
+                type="text"
+                id="numero-placa"
+                name="numeroPlaca"
+                placeholder="Ej. ABC-1234"
+                pattern="[A-Za-z0-9\-]+"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="monto-cobrado">Monto Cobrado ($)</label>
+              <input
+                type="number"
+                id="monto-cobrado"
+                name="montoCobrado"
+                placeholder="0.00"
+                step="0.01"
+                min="0"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn-guardar">Guardar Cambios</button>
+          </div>
         </form>
       </main>
 
